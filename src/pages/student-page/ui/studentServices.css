@@ -1,0 +1,64 @@
+/* try to be careful with the styling on each page
+to make it as accurate as possible (similar styling to the uconn site)
+this should be specific to uconn students
+*/
+.sub-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: white;
+}
+
+.sub-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  background-color: lightgray;
+  padding: 1rem;
+}
+
+.sub-grid-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.sub-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important ;
+}
+
+.h2 {
+  text-align: left;
+}
+
+.sub-grid-item.left {
+  flex-direction: row;
+  gap: 1rem;
+  background-color: #fff;
+}
+
+.student-image {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  background-color: orange;
+}
+
+.student-contents {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.connect-button {
+  background-color: rgb(4, 4, 48);
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+
+.tutoring-container {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 !important; */
+  margin-bottom: 1rem;
+  background-color: lightgray;
+  padding: 1rem;
+}
+
+
+.tutoring-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.tutoring-item {
+  background-color: white;
+}

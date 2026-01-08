@@ -1,0 +1,52 @@
+.network {
+  padding-right: 1rem;
+  margin: 0;
+}
+.network-bar {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(4, 4, 48);
+  color: white;
+  padding: 1rem;
+}
+.network-bar li {
+  float: left;
+}
+.network-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.network-barHeader {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+}
+.network-searchbar {
+  background-color: white;
+}
+.network-items {
+  background-color: grey;
+  padding: white;
+}
+.network-items{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem;
+}
+.network-items li{
+  list-style: none;
+  padding: 0 0.5rem;
+  font-weight: 16px;
+  color: white;
+}
+input {
+  margin: 0 !important;
+}
