@@ -20,7 +20,6 @@ h4 {
 }
 
 .events-section {
-    height: 300px;
     background-color: rgb(4, 4, 71);
     padding: 1rem;
     margin-top: 1rem;
@@ -42,7 +41,7 @@ h4 {
     align-items: center;
     justify-content: center;
     padding: 0.75rem;
-    background-color:white;
+    background-color: white;
     color: black;
 }
 
@@ -75,7 +74,8 @@ h4 {
 }
 
 .sg-btn {
-    margin-top: auto; /* push button to bottom */
+    margin-top: auto;
+    /* push button to bottom */
     align-self: center;
     color: black;
     background-color: #E0E0E0;
@@ -91,13 +91,21 @@ h4 {
 
 .sg-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(45,45,97,0.12);
+    box-shadow: 0 4px 12px rgba(45, 45, 97, 0.12);
 }
 
 @media (max-width: 480px) {
-    .img1 { height: 100px; }
-    .grid { gap: 0.6rem; }
-    .sg-btn { padding: 0.45rem 0.7rem; }
+    .img1 {
+        height: 100px;
+    }
+
+    .grid {
+        gap: 0.6rem;
+    }
+
+    .sg-btn {
+        padding: 0.45rem 0.7rem;
+    }
 }
 
 .clubs-grid {

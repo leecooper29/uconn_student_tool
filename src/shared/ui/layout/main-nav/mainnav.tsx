@@ -7,7 +7,7 @@ function MainNav() {
   const [isCampusOpen, setIsCampusOpen] = useState(false);
   const [isTutoringOpen, setIsTutoringOpen] = useState(false);
   const [selectedCampus, setSelectedCampus] = useState("Campus");
-  
+
   const campusDropDownRef = useRef<HTMLLIElement | null>(null);
   const tutoringDropDownRef = useRef<HTMLLIElement | null>(null);
   const navigate = useNavigate();
@@ -49,7 +49,6 @@ function MainNav() {
       <ul className="nav-items">
         <li><Link to="/home-page">Home ^</Link></li>
         <li><Link to="/network">My Network ^</Link></li>
-        <li><Link to="/">Sporting Events ^</Link></li>
 
         {/* Campus dropdown */}
         <li className="dropdown" ref={campusDropDownRef}>

@@ -1,19 +1,89 @@
-
 .tutoring-container {
   display: flex;
   flex-direction: column;
-  /* margin: 0 !important; */
-  margin-bottom: 1rem;
-  background-color: lightgray;
-  padding: 1rem;
+  background-color: #f8f9fa;
+  /* Light gray background */
+  padding: 2rem;
+  border-radius: 8px;
+  /* Soft rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.tutoring-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #343a40;
+  /* Darker text for better contrast */
+}
+
+.selected-service-banner {
+  background-color: #e9ecef;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-left: 5px solid #007bff;
+  /* Blue accent */
+}
 
 .tutoring-services {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows cards to wrap on smaller screens */
+  gap: 1.5rem;
+  /* Consistent spacing */
+  justify-content: center;
 }
 
-.tutoring-item {
+.service-card {
   background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 280px;
+  /* Fixed width for card consistency */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-card.active {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+  /* Light blue tint */
+}
+
+.service-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #212529;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+  /* Pushes button to bottom */
+}
+
+.service-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.service-card button:hover {
+  background-color: #0056b3;
 }

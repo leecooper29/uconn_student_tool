@@ -4,16 +4,12 @@ import AuthLayout from "./layouts/AuthLayout";
 import HomePage from "./pages/homePage";
 import NetworkPage from "./pages/network-page/networkPage";
 import StudentPage from "./pages/student-page/studentPage";
-import ProfilePage from "./pages/tutoring";
+import ProfilePage from "./pages/tutoring/tutoring";
 import SignIn from "./pages/user/signin";
-import Tutoring from "./pages/tutoring";
+import Tutoring from "./pages/tutoring/tutoring";
 import { AuthProvider } from "./shared/ui/layout/main-nav/contexts/AuthContext";
 
 function App() {
-
-  fetch("http://localhost:8000/students")
-  .then(res => res.json())
-  .then(data => console.log(data));
 
   return (
     <AuthProvider>
@@ -24,7 +20,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/home-page" element={<HomePage />} />
             <Route path="/network" element={<NetworkPage />} />
-            <Route path="/tutoring" element={<Tutoring/>}/>
+            <Route path="/tutoring" element={<Tutoring />} />
             <Route path="/student/id" element={<StudentPage />} />
             <Route path="/profile" element={<ProfilePage />} />
           </Route>
